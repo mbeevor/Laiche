@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Heading">
+        <!-- Customize your theme here. -->
+        <item name="android:paddingTop">35dp</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/lime</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+    </style>
+
+    <style name="SubHeading">
+        <!-- Customize your theme here. -->
+        <item name="android:paddingBottom">35dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/lime</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Intro">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/TextOnImage</item>
+    </style>
+
+    <style name="Description">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="contact">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="email">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingBottom">25dp</item>
+    </style>
+
+    <style name="phone">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingRight">150dp</item>
+    </style>
+
+    <style name="web">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingLeft">150dp</item>
+    </style>
+
+    <style name="footer">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+</resources>
