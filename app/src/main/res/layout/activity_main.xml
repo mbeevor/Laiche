@@ -24,7 +24,6 @@
                 android:src="@drawable/laichemilksmall" />
 
             <TextView
-                android:id="@+id/intro"
                 style="@style/intro"
                 android:layout_alignBottom="@id/header_image"
                 android:text="@string/intro" />
