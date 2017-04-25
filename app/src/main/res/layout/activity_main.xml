@@ -19,20 +19,20 @@
         <RelativeLayout style="@style/matchWrap">
 
             <ImageView
-                android:id="@+id/headerImage"
+                android:id="@+id/header_image"
                 style="@style/headerImage"
                 android:src="@drawable/laichemilksmall" />
 
             <TextView
                 android:id="@+id/intro"
                 style="@style/intro"
-                android:layout_alignBottom="@id/headerImage"
+                android:layout_alignBottom="@id/header_image"
                 android:text="@string/intro" />
 
             <TextView
                 android:id="@+id/description"
                 style="@style/description"
-                android:layout_below="@id/headerImage"
+                android:layout_below="@id/header_image"
                 android:text="@string/description" />
 
             <TextView
@@ -47,13 +47,11 @@
                 android:layout_centerHorizontal="true">
 
                 <ImageView
-                    android:id="@+id/callToAction"
                     style="@style/callToAction"
                     android:onClick="composeEmail"
                     android:src="@drawable/ic_email_black_24dp" />
 
                 <ImageView
-                    android:id="@+id/web"
                     style="@style/callToAction"
                     android:onClick="openWebPage"
                     android:src="@drawable/ic_public_black_24dp" />
