@@ -2,106 +2,74 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true" >
+    android:fillViewport="true">
 
-<LinearLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="laiche.beevorwhite.uk.co.laiche.MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Heading"
-        android:text="@string/app_name" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/SubHeading"
-        android:text="@string/strapline"  />
-
-    <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/headerImage"
-            android:scaleType="centerCrop"
-            android:src="@drawable/laichemilksmall"
-            android:id="@+id/headerImage"/>
+    <LinearLayout
+        style="@style/matchWrap"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Intro"
-            android:layout_alignBottom="@id/headerImage"
-            android:text="@string/intro"
-            android:id="@+id/intro" />
+            style="@style/heading"
+            android:text="@string/app_name" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Description"
-            android:text="@string/description"
-            android:id="@+id/description"
-            android:layout_below="@id/headerImage" />
+            style="@style/subHeading"
+            android:text="@string/strapline" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/contact"
-            android:text="@string/contact"
-            android:id="@+id/contact"
-            android:layout_below="@id/description" />
+        <RelativeLayout style="@style/matchWrap">
 
-         <ImageView
-             style="@style/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_email_black_24dp"
-            android:id="@+id/email"
-            android:layout_below="@id/contact" />
+            <ImageView
+                android:id="@+id/headerImage"
+                style="@style/headerImage"
+                android:src="@drawable/laichemilksmall" />
+
+            <TextView
+                android:id="@+id/intro"
+                style="@style/intro"
+                android:layout_alignBottom="@id/headerImage"
+                android:text="@string/intro" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/description"
+                android:layout_below="@id/headerImage"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/contact"
+                style="@style/contact"
+                android:layout_below="@id/description"
+                android:text="@string/contact" />
+
+            <LinearLayout
+                style="@style/wrapWrap"
+                android:layout_below="@id/contact"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/callToAction"
+                    style="@style/callToAction"
+                    android:onClick="composeEmail"
+                    android:src="@drawable/ic_email_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/web"
+                    style="@style/callToAction"
+                    android:onClick="openWebPage"
+                    android:src="@drawable/ic_public_black_24dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <ImageView
-            style="@style/phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_call_black_24dp"
-            android:id="@+id/call"
-            android:layout_below="@id/contact" />
-
-        <ImageView
-            style="@style/web"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="openWebPage"
-            android:src="@drawable/ic_public_black_24dp"
-            android:id="@+id/web"
-            android:layout_below="@id/contact"
-            android:layout_toRightOf="@id/email" />
-
-    </RelativeLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/footerImage"
-            android:scaleType="centerCrop"
+            style="@style/footerImage"
             android:src="@drawable/laichecowsmall" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/footer"
-        android:textColor="@color/white"
-        android:background="@color/grey"
-        android:gravity="center"
-        android:text="@string/footer" />
+        <TextView
+            style="@style/footer"
+            android:text="@string/footer" />
 
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

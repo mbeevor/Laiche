@@ -5,5 +5,6 @@
     <string name="description">Order by 2pm for next day delivery before 7am. No contract and no fuss. Just fresh British milk, delivered.</string>
     <string name="contact">Contact us to find out more.</string>
     <string name="footer">Laiche \nFresh British milk, delivered\nCopyright 2017</string>
+    <string name="email">Laiche enquiry</string>
 
 </resources>
